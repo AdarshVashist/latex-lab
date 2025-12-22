@@ -1,0 +1,41 @@
+\documentclass[a4paper,11pt]{article}
+
+\usepackage[margin=1in]{geometry}
+\usepackage{fancyhdr}
+\usepackage{multicol}
+\usepackage{pdflscape}
+\usepackage{hyperref}
+\usepackage{lipsum}
+
+\pagestyle{fancy}
+\fancyhf{}
+\fancyhead[L]{Styling Pages}
+\fancyfoot[C]{\thepage}
+
+\begin{document}
+
+\section*{Paper Sizes}
+This document uses A4 paper.
+
+\section*{Margins}
+Margins are set using geometry package.
+
+\section*{Headers and Footers}
+Custom headers and footers applied.
+
+\section*{Multi Column Layout}
+\begin{multicols}{2}
+\lipsum[1]
+\end{multicols}
+
+\section*{Page Orientation}
+Normal portrait text.
+
+\begin{landscape}
+Landscape mode page.
+\end{landscape}
+
+\section*{Hyperlink}
+Visit \href{https://www.latex-project.org}{LaTeX Project}
+
+\end{document}

@@ -1,0 +1,27 @@
+\documentclass{book}
+
+\usepackage{hyperref}
+\usepackage{cleveref}
+\usepackage{makeidx}
+
+\makeindex
+
+\begin{document}
+
+\chapter{Introduction}\label{ch:intro}
+Quantum Mechanics\index{Quantum Mechanics} is important.
+
+See \cref{ch:method}.
+
+\chapter{Methodology}\label{ch:method}
+
+\begin{thebibliography}{9}
+\bibitem{einstein}
+A. Einstein, Relativity, 1905.
+\end{thebibliography}
+
+Einstein\index{Einstein}
+
+\printindex
+
+\end{document}

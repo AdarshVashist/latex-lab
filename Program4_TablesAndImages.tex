@@ -1,0 +1,39 @@
+\documentclass{article}
+
+\usepackage{array}
+\usepackage{arydshln}
+\usepackage{multirow}
+\usepackage{longtable}
+\usepackage{graphicx}
+\usepackage{wrapfig}
+
+\begin{document}
+
+\section*{Basic Table}
+\begin{tabular}{|c|c|}
+\hline
+A & B \\ \hline
+1 & 2 \\ \hline
+\end{tabular}
+
+\section*{Merged Cells}
+\begin{tabular}{|c|c|}
+\hline
+\multicolumn{2}{|c|}{Merged} \\ \hline
+X & Y \\ \hline
+\end{tabular}
+
+\section*{Long Table}
+\begin{longtable}{|c|c|}
+\hline
+Item & Value \\ \hline
+1 & A \\
+2 & B \\
+3 & C \\
+\hline
+\end{longtable}
+
+\section*{Image}
+\includegraphics[width=0.4\textwidth]{example-image}
+
+\end{document}

@@ -1,0 +1,50 @@
+\documentclass{beamer}
+
+\usetheme{Madrid}
+
+\title{LaTeX Presentation}
+\author{Adarsh}
+\date{\today}
+
+\begin{document}
+
+\begin{frame}
+\titlepage
+\end{frame}
+
+\begin{frame}
+\frametitle{Introduction}
+This is a Beamer slide.
+\end{frame}
+
+\begin{frame}
+\frametitle{Columns}
+\begin{columns}
+\begin{column}{0.5\textwidth}
+Left side
+\end{column}
+\begin{column}{0.5\textwidth}
+Right side
+\end{column}
+\end{columns}
+\end{frame}
+
+\begin{frame}
+\frametitle{Blocks}
+\begin{block}{Block}
+Normal block
+\end{block}
+\begin{alertblock}{Alert}
+Important
+\end{alertblock}
+\end{frame}
+
+\begin{frame}
+\frametitle{Animation}
+\begin{itemize}
+\item<1-> First
+\item<2-> Second
+\end{itemize}
+\end{frame}
+
+\end{document}
