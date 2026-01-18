@@ -1,0 +1,156 @@
+\documentclass{beamer}
+
+\usetheme{Madrid}
+\usecolortheme{default}
+
+\usepackage{booktabs}
+\usepackage{graphicx}
+\usepackage{amsmath}
+
+\definecolor{titleblue}{RGB}{0,51,102}
+\setbeamercolor{title}{fg=white,bg=titleblue}
+\setbeamercolor{frametitle}{fg=white,bg=titleblue}
+
+\setbeamertemplate{navigation symbols}{}
+
+\title{AI-Based Intelligent Traffic Monitoring System for Smart Cities}
+\subtitle{Mini Project Presentation}
+\author{Adarsh Vashist}
+\institute{
+Department of Computer Science \& Engineering\\
+Dayananda Sagar College of Engineering\\
+Bengaluru
+}
+\date{January 2026}
+
+\begin{document}
+
+\begin{frame}
+\titlepage
+\end{frame}
+
+\begin{frame}{Outline}
+\tableofcontents
+\end{frame}
+
+\section{Introduction}
+
+\begin{frame}{Problem Statement}
+\begin{itemize}
+    \item Severe traffic congestion in Indian smart cities
+    \item Existing traffic monitoring systems are:
+    \begin{itemize}
+        \item Expensive to deploy
+        \item Limited in coverage
+        \item Error-prone and manual
+    \end{itemize}
+    \item Need for a real-time, scalable, and cost-effective solution
+\end{itemize}
+\end{frame}
+
+\begin{frame}{Proposed Solution}
+AI-based intelligent traffic monitoring system using computer vision:
+\begin{itemize}
+    \item Real-time vehicle detection and counting
+    \item Multi-object vehicle tracking
+    \item Traffic density estimation
+    \item Congestion detection and alerts
+\end{itemize}
+\bigskip
+\textbf{Goal:} Assist smart city traffic management authorities
+\end{frame}
+
+\section{System Architecture}
+
+\begin{frame}{System Overview}
+\begin{itemize}
+    \item \textbf{Input:} CCTV / IP camera video stream
+    \item \textbf{Processing Pipeline:}
+    \begin{enumerate}
+        \item Vehicle Detection (YOLOv8)
+        \item Multi-object Tracking (ByteTrack)
+        \item Density and Congestion Analysis
+        \item Visualization and Alerts
+    \end{enumerate}
+    \item \textbf{Output:} Vehicle counts, heatmaps, congestion alerts
+\end{itemize}
+\end{frame}
+
+\begin{frame}{Key Technologies Used}
+\begin{columns}[T]
+    \column{0.5\textwidth}
+    \begin{itemize}
+        \item YOLOv8 (Nano model)
+        \item OpenCV
+        \item ByteTrack
+        \item Python
+    \end{itemize}
+    \column{0.5\textwidth}
+    \begin{itemize}
+        \item NumPy, Pandas
+        \item NVIDIA Jetson Nano / Laptop GPU
+        \item 1080p CCTV Camera (30 FPS)
+    \end{itemize}
+\end{columns}
+\end{frame}
+
+\section{Results}
+
+\begin{frame}{Preliminary Performance Evaluation}
+\small
+\begin{table}
+\centering
+\begin{tabular}{l c c}
+\toprule
+\textbf{Metric} & \textbf{Value} & \textbf{Remarks} \\
+\midrule
+mAP@0.5 & 0.84 & Detection accuracy \\
+MOTA & 0.76 & Tracking performance \\
+FPS & 28--32 & Real-time processing \\
+\bottomrule
+\end{tabular}
+\caption{Performance on 10-minute traffic video}
+\end{table}
+\end{frame}
+
+\begin{frame}{Visual Output}
+\begin{itemize}
+    \item Bounding boxes on detected vehicles
+    \item Vehicle count per lane
+    \item Traffic density heatmaps
+    \item Congestion alerts on threshold exceed
+\end{itemize}
+\smallskip
+\textit{(Screenshots and demo video can be shown here)}
+\end{frame}
+
+\section{Conclusion}
+
+\begin{frame}{Conclusion and Future Work}
+\begin{itemize}
+    \item Successfully demonstrated AI-based traffic monitoring
+    \item Achieved real-time performance with good accuracy
+    \item Cost-effective solution using existing infrastructure
+\end{itemize}
+
+\pause
+\bigskip
+
+\textbf{Future Enhancements:}
+\begin{itemize}
+    \item Multi-camera synchronization
+    \item Integration with traffic signal controllers
+    \item Mobile dashboard for authorities
+    \item Training on larger Indian datasets
+\end{itemize}
+\end{frame}
+
+\begin{frame}{Thank You}
+\centering
+\Large Questions?\\[1cm]
+\large
+Adarsh Vashist\\
+adarsh@example.com
+\end{frame}
+
+\end{document}
