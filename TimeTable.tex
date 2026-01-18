@@ -1,0 +1,68 @@
+\documentclass[11pt,a4paper]{article}
+\usepackage[margin=1in]{geometry}
+\usepackage{array}
+\usepackage{booktabs}
+\usepackage{multirow}
+\usepackage{xcolor}
+\usepackage{colortbl}
+
+\definecolor{header}{RGB}{0,102,204}
+\definecolor{lightblue}{RGB}{220,235,255}
+
+\begin{document}
+
+\begin{center}
+    {\Large\bfseries Class Time Table} \\[6pt]
+    {\large Semester 3rd – B.Tech Computer Science \& Business Systems} \\[4pt]
+    {\small Academic Year 2025--2026 \quad | \quad Section A \quad | \quad Room: CSBS-501}
+\end{center}
+
+\vspace{10pt}
+
+\begin{tabular}{|>{\centering\arraybackslash}p{1.8cm}|* {6}{>{\centering\arraybackslash}p{2.4cm}|}}
+\hline
+\rowcolor{header} \textcolor{white}{\textbf{Time}} & 
+\textcolor{white}{\textbf{Monday}} & 
+\textcolor{white}{\textbf{Tuesday}} & 
+\textcolor{white}{\textbf{Wednesday}} & 
+\textcolor{white}{\textbf{Thursday}} & 
+\textcolor{white}{\textbf{Friday}} & 
+\textcolor{white}{\textbf{Saturday}} \\
+\hline
+\rowcolor{lightblue}
+09:00 -- 10:00 & Mathematics & Data Structures & OS & DBMS & Computer Networks & \multirow{2}{*}{\centering Elective – I} \\
+\cline{2-6}
+\rowcolor{lightblue}
+10:00 -- 11:00 & Mathematics & Data Structures & OS & DBMS & Computer Networks & \\
+\hline
+11:00 -- 11:15 & \multicolumn{6}{c|}{\cellcolor{yellow!30} \small \textbf{Short Break}} \\
+\hline
+11:15 -- 12:15 & OS Lab & Latex Lab & \multirow{2}{*}{\centering Mathematics} & Web Tech Lab & Cloud Computing & \multirow{3}{*}{\centering Project Work / Seminar} \\
+\cline{2-3} \cline{5-5}
+12:15 -- 13:15 & Python Lab & Java Lab & & Web Tech Lab & Cloud Computing & \\
+\hline
+13:15 -- 14:00 & \multicolumn{6}{c|}{\cellcolor{yellow!30} \small \textbf{Lunch Break}} \\
+\hline
+14:00 -- 15:00 & Discrete Math & AI & Compiler Design & Software Engg. & \multirow{2}{*}{\centering Mini Project} & -- \\
+\cline{2-4}
+15:00 -- 16:00 & Discrete Math & AI & Compiler Design & Software Engg. & & -- \\
+\hline
+16:00 -- 16:15 & \multicolumn{6}{c|}{\cellcolor{yellow!30} \small \textbf{Short Break}} \\
+\hline
+16:15 -- 17:15 & -- & -- & Elective – II & -- & -- & -- \\
+\hline
+\end{tabular}
+
+\vspace{15pt}
+
+\begin{center}
+    \small
+    \textbf{Note:} 
+    \begin{itemize}
+        \item All labs are of 2 hours duration.
+        \item Saturday has only morning session for electives/project.
+        \item Timings subject to change – check department notice board.
+    \end{itemize}
+\end{center}
+
+\end{document}
