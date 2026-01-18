@@ -1,0 +1,50 @@
+\documentclass[10pt,letterpaper]{article}
+\usepackage[margin=0.75in]{geometry}
+\usepackage{newspaper}
+\usepackage{multicol}
+\usepackage{lipsum}
+\usepackage[T1]{fontenc}
+\usepackage{microtype}
+\usepackage[hidelinks]{hyperref}
+\usepackage{newunicodechar}
+\newunicodechar{₹}{\textup{\texteuro}}
+
+\date{January 18, 2026}
+\currentvolume{42}
+\currentissue{7}
+
+\begin{document}
+
+\maketitle
+
+\begin{multicols}{3}
+
+\byline{Bengaluru Tech Boom Continues}{Adarsh, Staff Reporter}
+
+\headline{Local Startup Raises \$50M in Series B Funding}
+
+Bengaluru's startup ecosystem showed no signs of slowing down today as fintech company PaySwift announced a \$50 million Series B round led by global investors.
+
+The funding — equivalent to over ₹420 crore — will accelerate product development and expand into new markets across Southeast Asia. CEO Priya Sharma stated: “This investment validates our mission to make digital payments seamless for small businesses.”
+
+\lipsum[1][1-4]
+
+\headline{City Traffic Woes: New Metro Line Underway}
+
+The Bengaluru Metro Rail Corporation confirmed Phase 3 construction has begun, promising to connect Whitefield to the airport by 2029.
+
+“Better late than never,” said daily traveler Rajesh Kumar.
+
+\lipsum[2][1-3]
+
+\closearticle
+
+\headline{Weather Alert: Heavy Rain Expected This Weekend}
+
+The India Meteorological Department forecasts heavy rainfall over coastal Karnataka from Saturday through Monday.
+
+\lipsum[3][1-2]
+
+\end{multicols}
+
+\end{document}
