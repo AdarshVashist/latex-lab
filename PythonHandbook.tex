@@ -1,0 +1,84 @@
+\documentclass[10pt,a4paper]{article}
+\usepackage[margin=0.7in]{geometry}
+\usepackage{listings}
+\usepackage{xcolor}
+\usepackage{titlesec}
+
+\lstset{
+    basicstyle=\ttfamily\small,
+    keywordstyle=\color{blue}\bfseries,
+    commentstyle=\color{green!60!black}\itshape,
+    stringstyle=\color{red},
+    numbers=left,
+    numberstyle=\tiny\color{gray},
+    stepnumber=1,
+    breaklines=true,
+    frame=single,
+    tabsize=4,
+    language=Python
+}
+
+\titleformat{\section}{\large\bfseries}{\thesection}{1em}{}
+
+\begin{document}
+
+\begin{center}
+    {\LARGE Python 3 Quick Reference} \\[4pt]
+    {\small Adarsh \quad | \quad January 2026}
+\end{center}
+
+\section{Basics}
+\begin{lstlisting}
+# Hello World
+print("Hello, World!")
+
+# Variables
+x = 10          # int
+name = "Adarsh" # str
+pi = 3.14       # float
+is_student = True
+
+# Type conversion
+str(42)    # '42'
+int("100") # 100
+\end{lstlisting}
+
+\section{Control Flow}
+\begin{lstlisting}
+if x > 0:
+    print("Positive")
+elif x < 0:
+    print("Negative")
+else:
+    print("Zero")
+
+for i in range(5):
+    print(i)
+
+while x > 0:
+    x -= 1
+\end{lstlisting}
+
+\section{Lists \& Dictionaries}
+\begin{lstlisting}
+fruits = ["apple", "banana", "cherry"]
+fruits.append("date")
+print(fruits[1])          # banana
+
+person = {"name": "Adarsh", "age": 22, "city": "Bengaluru"}
+print(person["city"])
+person["skills"] = ["Python", "LaTeX"]
+\end{lstlisting}
+
+\section{Functions}
+\begin{lstlisting}
+def greet(name="Guest"):
+    return f"Hello, {name}!"
+
+print(greet("Adarsh"))   # Hello, Adarsh!
+print(greet())           # Hello, Guest!
+
+def square(n): return n*n
+\end{lstlisting}
+
+\end{document}
